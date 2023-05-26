@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Download starting at <span id="seconds"></span></h1>
+  </body>
+
+  <script>
+    let secondArea = document.getElementById("seconds");
+
+    let second = 3;
+    secondArea.innerText = second;
+
+    let counter = function () {
+      if (second > 1) {
+        second -= 1;
+        secondArea.innerText = second;
+      } else {
+        clearInterval(countInterval);
+        alert("geri sayim bitti");
+      }
+    };
+
+    let countInterval = setInterval(counter, 1000);
+
+    document.addEventListener("visibilitychange", () => {
+      console.log(document.visibilityState);
+      if (document.visibilityState === "visible") {
+        countInterval = setInterval(counter, 1000);
+      } else {
+        console.log("geri sayim durduruldu");
+        clearInterval(countInterval);
+      }
+    });
+  </script>
+</html>
