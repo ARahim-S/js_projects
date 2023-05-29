@@ -79,10 +79,33 @@
 
 // vowelsAndConsonants("javascriptloops");
 
-const animals = ["cat", "dog", "bird", "horse"];
+//forEach()
+// const animals = ["cat", "dog", "bird", "horse"];
 
-animals.forEach((value, index, array) => {
-  console.log("value: ", value);
-  console.log("value parametresinin aldığı index :", index);
-  console.log("array:", array);
-});
+// animals.forEach((value, index, array) => {
+//   console.log("value: ", value);
+//   console.log("value parametresinin aldığı index :", index);
+//   console.log("array:", array);
+// });
+
+//filter()
+// const person = [
+//   {
+//     name: "Adem",
+//     age: 25,
+//     languages: ["JavaScript", "CSS"],
+//   },
+//   {
+//     name: "Oğuz",
+//     age: 33,
+//     languages: ["Java", "HTML"],
+//   },
+// ];
+
+// const isAgeUpper30 = person.filter((item) => item.age > 30);
+// const isKnownJS = person.filter((item) =>
+//   item.languages.includes("CSS") ? item : null
+// );
+
+// console.log(isAgeUpper30[0].name);
+// console.log(isKnownJS[0].name);
