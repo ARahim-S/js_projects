@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+body {
+  background: aliceblue;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#counter-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#counter-div div {
+  width: 50rem;
+  border-radius: 2rem;
+  background-color: rgb(122, 83, 32);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 1.5rem;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+button:last-child {
+  color: lime;
+  background-color: black;
+}
+
+.counter {
+  font-size: 3rem;
+  padding: 1rem;
+  font-weight: bold;
+  margin: 2rem;
+  padding: 1rem;
+  width: 100%;
+  color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
