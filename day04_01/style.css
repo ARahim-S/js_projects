@@ -104,3 +104,15 @@ input {
 .button:hover {
   background-color: #bbb;
 }
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #f78501;
+  font-weight: bold;
+  transition: none;
+}
